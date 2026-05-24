@@ -81,3 +81,9 @@ Projeyi yaklaşık **6-7 saat** içerisinde tamamladım. Daha fazla vaktim olsay
 - Ziyaretçi bir sorunun cevabını vermek istemezse ne olur?
 
     Eğer kullanıcı "şirketi söylemek istemiyorum" derse bile chatbot "Tabii, anlıyorum" diyerek devam ediyor. Hiçbir alan zorunlu değil — eksik bilgiyle de lead kaydediliyor, satış ekibi görür ne kadar dolu geldiğini.
+
+
+## Son olarak
+
+Ben yakın zamanda çok daha kapsamlı bir e-ticaret sitesi oluşturmuştum. Lütfen bu projemi de incelemeyi unutmayın: 
+    https://github.com/ScorpQ/ecommerce-microservices-java
