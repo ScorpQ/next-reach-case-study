@@ -2,7 +2,7 @@
 
 Landing page'e gömülebilir bir chatbot, lead toplama ve yönetim sistemi. Ziyaretçileri doğal konuşmayla tanıyıp satış ekibinin harekete geçebileceği kaliteli talepler oluşturuyor.
 
-**Live:** https://next-reach-case-study-abxae8t7p-cansins-projects-9a5fef1c.vercel.app/
+**Live:** https://next-reach-case-study-qz2u4n1ku-cansins-projects-9a5fef1c.vercel.app/
 
 ---
 
