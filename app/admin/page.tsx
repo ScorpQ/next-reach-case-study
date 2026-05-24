@@ -229,8 +229,8 @@ export default function AdminPage() {
           {[
             { label: 'Toplam talep', value: leads.length, color: 'text-foreground' },
             { label: 'Yeni', value: counts.new, color: 'text-blue-600' },
-            { label: 'Sıcak lead', value: counts.hot, color: 'text-orange-600' },
-            { label: 'Ilık lead', value: counts.warm, color: 'text-amber-600' },
+            { label: 'En Yeni lead', value: counts.hot, color: 'text-orange-600' },
+            { label: 'Önceki lead', value: counts.warm, color: 'text-amber-600' },
           ].map((s) => (
             <div key={s.label} className="rounded-xl border bg-white p-4">
               <p className={cn('text-2xl font-bold', s.color)}>{s.value}</p>
@@ -241,7 +241,7 @@ export default function AdminPage() {
 
         {/* Filter tabs */}
         <div className="mb-4 flex gap-2">
-          {([['all', 'Tümü'], ['hot', 'Sıcak'], ['warm', 'Ilık'], ['cold', 'Soğuk']] as const).map(([val, label]) => (
+          {([['all', 'Tümü'], ['hot', 'Kritik'], ['warm', 'Önemli'], ['cold', 'Standart']] as const).map(([val, label]) => (
             <button
               key={val}
               onClick={() => setFilter(val)}
