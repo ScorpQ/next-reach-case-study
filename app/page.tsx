@@ -19,9 +19,11 @@ export default function HomePage() {
             <a href="#pricing" className="transition-colors hover:text-foreground">Fiyatlandırma</a>
             <a href="#about" className="transition-colors hover:text-foreground">Hakkımızda</a>
           </nav>
-          <a href="/admin" className="text-xs text-muted-foreground transition-colors hover:text-foreground">
-            Admin →
-          </a>
+          <a  href="/admin"
+  className="inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-xs font-medium transition-colors hover:bg-muted"
+>
+  Admin Panel →
+</a>
         </div>
       </header>
 

@@ -21,11 +21,9 @@ cd next-reach-case-study
 # Dependecyler yüklenir
 npm install
 
-# .env dosyasını oluştur (Groq API key gerekli)
-# GROQ_API_KEY=gsk_xxxxx
-# USE_MOCK_DATA=false (demo için true yapabilirsin)
+# .env dosyasını doldurulmalı, örnek env mevcut.
 
-# Dev server'ı başlat
+# server run kodu
 npm run dev
 ```
 
@@ -34,4 +32,31 @@ Uygulama açılacak: `http://localhost:3000`
 - **Landing page:** Ana sayfa, chatbot trigger butonu sağ altta
 - **Chatbot:** "Bize Ulaşın" butonuyla açılıyor
 - **Admin Panel:** `http://localhost:3000/admin` — tüm lead'leri görüyor
+
+
+
+## Hangi teknolojileri seçtim
+
+Hızlı bir deployment gerçekleştirmek için frontend ve backend yapısını bir arada kurmak istedim.
+Bu sebep ile **Next.js** kullandım. 
+
+Normalde ise frontend tarafında react, backend tarafında Java Spring Boot ile NestJS arasında seçim yapardım.
+
+**Vercel** kullanarak deploy ettim. Veri tabanımı ise **docker** kullanarak ayağa kaldırmak yerine hızlı bir şekilde deploy edebilmek için **Supabase** kullandım.
+
+
+## 6 saatte neyi yapamadın, daha fazla zamanda ne eklerdin?
+
+ilk işim kesinlikle keycloak ile bir authorization sistemi kurmak olurdu. Bir benzerini önceden geliştirdiğim bir mikroservis uygulamasında yapmıştım (https://github.com/ScorpQ/ecommerce-microservices-java).
+
+Daha sonra daha sağlıklı bir deployment için docker-compose dosyaları hazırlardım ve sunucumda docker ile deploy ederdim.
+
+## PRD’de muğlak bıraktığımız yerleri nasıl yorumladın
+
+
+
+## Zaman
+
+Projeyi yaklaşık **6-7 saat** içerisinde tamamladım. Daha fazla vaktim olsaydı code-base'i daha temiz tutmaya çalışırdım, kesinlikle gözümden kaçan kötü kodlar vardır şu anda.
+
 
