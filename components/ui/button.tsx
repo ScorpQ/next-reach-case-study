@@ -1,0 +1,34 @@
+'use client'
+
+import { cva, type VariantProps } from 'class-variance-authority'
+import type { ButtonHTMLAttributes } from 'react'
+import { cn } from '@/lib/utils'
+
+const buttonVariants = cva(
+  'inline-flex min-h-10 items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50',
+  {
+    variants: {
+      variant: {
+        default: 'bg-primary text-primary-foreground hover:bg-slate-800',
+        secondary: 'bg-secondary text-secondary-foreground hover:bg-slate-200',
+        outline: 'border bg-background hover:bg-muted',
+        ghost: 'hover:bg-muted',
+        accent: 'bg-[hsl(186,34%,28%)] text-[hsl(180,25%,96%)] hover:bg-[hsl(186,34%,22%)]',
+      },
+      size: {
+        default: 'h-10 px-4 py-2',
+        sm: 'h-9 px-3',
+        lg: 'h-11 px-5',
+        icon: 'h-10 w-10',
+      },
+    },
+    defaultVariants: { variant: 'default', size: 'default' },
+  }
+)
+
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> &
+  VariantProps<typeof buttonVariants>
+
+export function Button({ className, variant, size, ...props }: ButtonProps) {
+  return <button className={cn(buttonVariants({ variant, size, className }))} {...props} />
+}

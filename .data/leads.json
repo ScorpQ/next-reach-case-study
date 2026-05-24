@@ -1,0 +1,81 @@
+[
+  {
+    "id": "2cc82190-e43a-448a-8930-ffeca27d558b",
+    "createdAt": "2026-05-24T11:36:47.337Z",
+    "status": "new",
+    "score": "warm",
+    "name": "Can",
+    "company": "",
+    "role": "",
+    "email": "cansinlale01@gmail.com",
+    "companySize": "",
+    "currentTool": "",
+    "painPoint": "e-ticaret ve analitik araçlar",
+    "timeline": "",
+    "intent": "bilgi",
+    "conversationSummary": "Can, e-ticaret ve analitik araçlar hakkında bilgi almak istiyor, satış ekibi iletişime geçecek.",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Merhaba! 👋 Ben NextReach'in dijital asistanıyım. Analitik dashboard'larımız hakkında bilgi almak mı, demo görmek mi, yoksa başka bir konuda mı yardımcı olabilirim?"
+      },
+      {
+        "role": "user",
+        "content": "Selam"
+      },
+      {
+        "role": "assistant",
+        "content": "Selam! NextReach'ten merhaba. Sitemizi nasıl buldunuz, ne arıyordunuz?"
+      },
+      {
+        "role": "user",
+        "content": "Bilmiyorum neler sorabilirim"
+      },
+      {
+        "role": "assistant",
+        "content": "Endişelenmenize gerek yok! Burada size yardım etmek için varım. Adınız nedir, başlamak için güzel bir soru olabilir?"
+      },
+      {
+        "role": "user",
+        "content": "Can"
+      },
+      {
+        "role": "assistant",
+        "content": "Merhaba Can! Şirkette çalışıyor musunuz yoksa bireysel olarak mı araştırmalar yapıyorsunuz?"
+      },
+      {
+        "role": "user",
+        "content": "bireysel"
+      },
+      {
+        "role": "assistant",
+        "content": "Can, bireysel olarak araştırma yapıyorsunuz, ilgilenmek istediğiniz konular neler? E-ticaret veya analitik araçlar gibi bir alan mı?"
+      },
+      {
+        "role": "user",
+        "content": "evet"
+      },
+      {
+        "role": "assistant",
+        "content": "İlginizi çekiyor. Mevcut olarak hangi araçları veya platformları kullanıyorsunuz? Örneğin, e-ticaret siteniz var mı, hangi analitik araçlarını kullanıyorsunuz?"
+      },
+      {
+        "role": "user",
+        "content": "bir talep oluşturmak istiyorum"
+      },
+      {
+        "role": "assistant",
+        "content": "Harika! Talep oluşturmak istiyorsunuz, bu çok güzel. Size Sales ekibimiz ulaşacak. Email adresinizi bırakır mısınız, böylece size ulaşabilmeleri için?"
+      },
+      {
+        "role": "user",
+        "content": "cansinlale01@gmail.com"
+      },
+      {
+        "role": "assistant",
+        "content": "Teşekkür ederim Can! Bilgilerinizi ekibimize ilettim. Kısa süre içinde biriyle iletişime geçecekler. Başka eklemek istediğiniz bir şey var mı?"
+      }
+    ],
+    "rawConversation": "NextReach: Merhaba! 👋 Ben NextReach'in dijital asistanıyım. Analitik dashboard'larımız hakkında bilgi almak mı, demo görmek mi, yoksa başka bir konuda mı yardımcı olabilirim?\n\nZiyaretçi: Selam\n\nNextReach: Selam! NextReach'ten merhaba. Sitemizi nasıl buldunuz, ne arıyordunuz?\n\nZiyaretçi: Bilmiyorum neler sorabilirim\n\nNextReach: Endişelenmenize gerek yok! Burada size yardım etmek için varım. Adınız nedir, başlamak için güzel bir soru olabilir?\n\nZiyaretçi: Can\n\nNextReach: Merhaba Can! Şirkette çalışıyor musunuz yoksa bireysel olarak mı araştırmalar yapıyorsunuz?\n\nZiyaretçi: bireysel\n\nNextReach: Can, bireysel olarak araştırma yapıyorsunuz, ilgilenmek istediğiniz konular neler? E-ticaret veya analitik araçlar gibi bir alan mı?\n\nZiyaretçi: evet\n\nNextReach: İlginizi çekiyor. Mevcut olarak hangi araçları veya platformları kullanıyorsunuz? Örneğin, e-ticaret siteniz var mı, hangi analitik araçlarını kullanıyorsunuz?\n\nZiyaretçi: bir talep oluşturmak istiyorum\n\nNextReach: Harika! Talep oluşturmak istiyorsunuz, bu çok güzel. Size Sales ekibimiz ulaşacak. Email adresinizi bırakır mısınız, böylece size ulaşabilmeleri için?\n\nZiyaretçi: cansinlale01@gmail.com\n\nNextReach: Teşekkür ederim Can! Bilgilerinizi ekibimize ilettim. Kısa süre içinde biriyle iletişime geçecekler. Başka eklemek istediğiniz bir şey var mı?"
+  }
+]
