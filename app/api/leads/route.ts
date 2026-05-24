@@ -12,10 +12,8 @@ export async function GET() {
     if (USE_MOCK) {
       return NextResponse.json({ leads: MOCK_LEADS })
     }
-    const leads = getLeads()
-    // Prepend mock leads for demo richness if no real leads yet
-    const all = leads.length === 0 ? MOCK_LEADS : leads
-    return NextResponse.json({ leads: all })
+    const leads = await getLeads()
+    return NextResponse.json({ leads: leads })
   } catch (err) {
     console.error('GET leads error:', err)
     return NextResponse.json({ leads: MOCK_LEADS })
@@ -48,7 +46,7 @@ export async function POST(req: NextRequest) {
     }
 
     if (!USE_MOCK) {
-      saveLead(lead)
+      await saveLead(lead)
     }
 
     return NextResponse.json({ success: true, lead })
@@ -72,7 +70,7 @@ export async function PATCH(req: NextRequest) {
       return NextResponse.json({ success: true, lead })
     }
 
-    const updated = updateLeadStatus(id, updates)
+    const updated = await updateLeadStatus(id, updates)
     if (!updated) return NextResponse.json({ error: 'Not found' }, { status: 404 })
 
     return NextResponse.json({ success: true, lead: updated })
