@@ -51,12 +51,33 @@ ilk işim kesinlikle keycloak ile bir authorization sistemi kurmak olurdu. Bir b
 
 Daha sonra daha sağlıklı bir deployment için docker-compose dosyaları hazırlardım ve sunucumda docker ile deploy ederdim.
 
-## PRD’de muğlak bıraktığımız yerleri nasıl yorumladın
-
-
 
 ## Zaman
 
 Projeyi yaklaşık **6-7 saat** içerisinde tamamladım. Daha fazla vaktim olsaydı code-base'i daha temiz tutmaya çalışırdım, kesinlikle gözümden kaçan kötü kodlar vardır şu anda.
 
 
+## PRD’de muğlak bıraktığımız yerleri nasıl yorumladın
+
+- Chatbot ziyaretçiye ne soracak? Hangi sırayla? Ne zaman “yeter” diyecek? || Chatbot’un tonu ve kişiliği nasıl olmalı? NextReach’i nasıl temsil ediyor?
+
+    Öncelikle chatbot olarak Groq kullandım,
+    soracağı soruları ve kişiliğini "app > api > chat > route.ts" dosyasında belirttim. Detaylı bir şekilde incelenebilir. 
+
+
+- Satış ekibi “iyi bir lead”i kötüsünden nasıl ayırt edecek?
+
+    Lead'ler tarafından verilen bilgiler bir score sistemi içerisinde ölçülür. Lead tarafından ne kadar bilgi alınabilirse iyi veya kötülük ölçümü o kadar düzgün ve keskin yapılır. "lib > scoring." altında incelenebilir.
+
+- Admin view’de hangi bilgiyi nasıl gösterirsen ekibin hayatını kolaylaştırırsın?
+
+    Açıkçası buna çok somut bir cevabım yok. Konuşa içerisine gerçekleştirilen önemli bilgilerin özetini ve verilen bilgileri göstermeye çalıştım. Bu kesinlikle beyin fırtınası gerektiren bir özellik. Bunu satış ekibiyle konuşmam lazım.
+
+
+- Kötü niyetli kullanım (spam, boş talepler, bot trafiği) için ne yaparsın?
+
+    Bu konuda daha önce derin çalışmalarım olmadığı için boş talepleri veya bot trafiği gibi durumları handle **edemedim**.
+
+- Ziyaretçi bir sorunun cevabını vermek istemezse ne olur?
+
+    Eğer kullanıcı "şirketi söylemek istemiyorum" derse bile chatbot "Tabii, anlıyorum" diyerek devam ediyor. Hiçbir alan zorunlu değil — eksik bilgiyle de lead kaydediliyor, satış ekibi görür ne kadar dolu geldiğini.
