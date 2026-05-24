@@ -2,7 +2,7 @@
 
 Landing page'e gömülebilir bir chatbot, lead toplama ve yönetim sistemi. Ziyaretçileri doğal konuşmayla tanıyıp satış ekibinin harekete geçebileceği kaliteli talepler oluşturuyor.
 
-**Live Demo:** [Vercel linki buraya eklenecek]  
+**Live:** https://next-reach-case-study-abxae8t7p-cansins-projects-9a5fef1c.vercel.app/
 
 ---
 
@@ -15,11 +15,10 @@ Landing page'e gömülebilir bir chatbot, lead toplama ve yönetim sistemi. Ziya
 ### Adımlar
 
 ```bash
-# Repo'yu klonla
 git clone https://github.com/ScorpQ/next-reach-case-study.git
 cd next-reach-case-study
 
-# Bağımlılıkları yükle
+# Dependecyler yüklenir
 npm install
 
 # .env dosyasını oluştur (Groq API key gerekli)
