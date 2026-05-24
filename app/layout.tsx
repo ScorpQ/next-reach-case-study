@@ -2,8 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'NextReach — E-ticaret Analitik Dashboard',
-  description: 'Orta ölçekli e-ticaret firmaları için analitik dashboard',
+  title: 'NextReach - Analitik Dashboard',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
